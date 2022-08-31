@@ -1,0 +1,49 @@
+*{
+    font-family:Comic Sans MS, arial, verdana;  
+  }
+
+body{
+    background-image: url("../img/descarga.jpg");
+    background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.ejer{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  margin:15em;
+  justify-content: center;  
+}
+.cuadro{
+    display: flex;
+    align-items: center;
+    margin: 2em;
+    justify-content: center;
+   
+    
+}
+.cuadro input{
+    padding: 20px;
+    width: 430px;
+    text-align: center;
+    border-radius: 2em;
+    font-size: 150%;
+}
+.principal{
+    display: flex;
+    justify-content: space-around;
+}
+
+.m{
+    padding: 30px;
+    width: 300px;
+    background-color: black;
+    opacity: 75%;
+    border-radius: 1em;
+    font-size: 130%;
+    margin: 1em;
+    color: white;
+   border-color: white;
+   
+}

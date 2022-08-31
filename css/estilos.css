@@ -1,0 +1,55 @@
+*{
+  font-family:Comic Sans MS, arial, verdana;  
+}
+body{
+    background-image: url("../img/descarga1.jpg");
+    background-repeat: no-repeat;
+  background-size: 100%;
+  height: 100vh;
+ 
+}
+
+.principal{
+    display: flex;
+    justify-content: space-around;
+}
+
+.una{
+  
+   margin:5em;
+flex-wrap: wrap;
+  display: flex;
+  align-items: center; 
+ flex-direction: column;
+ 
+}
+
+.m{
+    padding: 30px;
+    width: 300px;
+    background-color: #b2e2f2;
+    opacity:68%;
+    border-radius: 1em;
+    font-size: 200%;
+    margin: 1em;
+   
+}
+.m:hover{
+   background-color: #66ccff;
+}
+
+.dos{
+  
+    margin:5em;
+ flex-wrap: wrap;
+   display: flex;
+   align-items: center; 
+  flex-direction: column;
+  
+ }
+ .titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 150%; 
+ }
+
