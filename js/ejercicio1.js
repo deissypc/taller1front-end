@@ -3,19 +3,23 @@ function lon(){
     const lon =document.getElementById('p').value.length;
     alert("la longitud que tiene la palabra es: " +lon)
     }
-    /*palabra en mayuscula*/
+
+ /*palabra en mayuscula*/
 function mayus(){
-let mayus=document.getElementById('p').value;
-            alert("la palabra en mayuscula queda: " +mayus.toUpperCase());
-            }
-            /*palabra en minuscula*/
+    const mayus=document.getElementById('p').value;
+    const upperCasemayus = mayus.toUpperCase();
+    alert("la palabra en mayuscula queda: "+upperCasemayus);
+}
+
+ /*palabra en minuscula*/
 function minus(){
-let minus=document.getElementById('p').value;
-                alert ("la palabra en minuscula queda: " +minus.toLowerCase());
-                }
+    const minus=document.getElementById('p').value;
+    const lowerCaseminus = minus.toLowerCase();
+   alert ("la palabra en minuscula queda: "+lowerCaseminus);
+ }
+
  /*primer caracter*/
 function primero(){
-let primero =document.getElementById('p').value[0];
-                alert ("el primer caracter de la palabra es: "  +primero.toUpperCase());
-
-                }
+const primero =document.getElementById('p').value;
+alert ("el primer caracter de la palabra es: " +primero.charAt(0));
+ }
