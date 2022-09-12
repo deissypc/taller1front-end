@@ -65,3 +65,8 @@ body{
  span{
   font-size:130%;
  }
+
+ .n{
+  display: flex;
+  
+ }
