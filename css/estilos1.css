@@ -101,3 +101,52 @@ background-color:white;
 color:black;
 border-color:black; 
 }
+
+.caja1{
+background-color: white;
+width: 290px;
+height: 400px;
+margin: 2em;
+border-radius: 2em;
+}
+.caja1 h5{
+  display: flex;
+  justify-content: center;
+  }
+  .caja1 button{
+   margin: 20px;
+   padding:10px;
+  margin-top: -1%;
+  width:95px;
+  }
+
+  .caja2{
+    background-color:black;
+    width: 290px;
+    height: 400px;
+    margin: 2em;
+    border-radius: 2em;
+   
+    }
+    .caja2 h5{
+      display: flex;
+      justify-content: center;
+      color:white;
+      }
+      .caja2 button{
+       margin: 20px;
+       padding:10px;
+      margin-top: -1%;
+      width:95px;
+      }
+
+  .caja{
+    display: flex;
+   flex-wrap: wrap;
+  margin-top: 1%;
+    justify-content: center;
+
+  }
+ 
+ 
+

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos1.css">
+    <script src="../js/ejercicio5.js"></script>
+    <title>Ejercicio5</title>
+    <link rel="icon" type="image/x-icon" href="../assets/Icono7.ico"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+     <!--Caja Cuadrado-->
+     <div class="caja">
+    <div class="caja1">
+        <img src="../img/cu.png" class="card-img-top">
+        <div class="card-body">
+          <h5>Cuadrado</h5>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+           Perimetro
+          </button>
+           <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+          Area
+           </button>
+        </div>
+        </div>
+        <br>
+
+         <!--Caja Circulo-->
+    <div class="caja2">
+        <img src="../img/ci1.png" class="card-img-top">
+        <div class="card-body">
+          <h5>Circulo</h5>
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+           Perimetro
+          </button>
+           <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">
+          Area
+           </button>
+        </div>
+        </div>
+        </div>
+
+         <!--Caja Triangulo-->
+         <div class="caja">
+    <div class="caja2">
+        <img src="../img/ti.png" height="290px" width="200px" class="card-img-top">
+        <div class="card-body">
+          <h5>Triangulo</h5>
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">
+           Perimetro
+          </button>
+           <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop5">
+          Area
+           </button>
+        </div>
+        </div>
+
+         <!--Caja Rectangulo-->
+    <div class="caja1">
+        <img src="../img/re.png" class="card-img-top">
+        <div class="card-body">
+          <h5>Rectangulo</h5>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop6">
+           Perimetro
+          </button>
+           <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop7">
+          Area
+           </button>
+        </div>
+        </div>
+       </div>
+      
+   
+      
+      <!-- Modal Perimetro Cuadrado -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Perimetro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>Ingrese el valor del lado del cuadrado:</span>
+                <input type="number" name="valor1"id="valor1"> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-info"  onclick="Cu();">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal Area Cuadrado -->
+       <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Area</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>Ingrese el valor del lado del cuadrado:</span>
+                <input type="number" name="valor2"id="valor2"> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-info"  onclick="Cu1();">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal Perimetro Circulo -->
+       <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Perimetro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>Ingrese el radio del circulo:</span>
+                <input type="number" name="valor3"id="valor3"> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-info"  onclick="Cu2();">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal Area Circulo -->
+       <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Area</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>Ingrese el radio del circulo:</span>
+                <input type="number" name="valor4"id="valor4"> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-info"  onclick="Cu3();">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal Perimetro Triangulo -->
+       <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Perimetro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>Ingrese la altura del triangulo:</span>
+                <input type="number" name="valor5"id="valor5">
+                <span>Ingrese la base del triangulo:</span>
+                <input type="number" name="valor6"id="valor6">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-info"  onclick="Cu8();">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal Area Triangulo -->
+       <div class="modal fade" id="staticBackdrop5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Area</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>Ingrese la altura del triangulo:</span>
+                <input type="number" name="valor7"id="valor7">
+                <span>Ingrese la base del triangulo:</span>
+                <input type="number" name="valor8"id="valor8">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-info  onclick="Cu5();">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal Perimetro Rectangulo -->
+       <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Perimetro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>Ingrese la altura del rectangulo:</span>
+                <input type="number" name="valor9"id="valor9">
+                <span>Ingrese la base del rectangulo:</span>
+                <input type="number" name="valor10"id="valor10">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-info"  onclick="Cu6();">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!-- Modal Area Rectangulo -->
+       <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Area</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <span>Ingrese la altura del rectangulo:</span>
+                <input type="number" name="valor11"id="valor11">
+                <span>Ingrese la base del rectangulo:</span>
+                <input type="number" name="valor12"id="valor12">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-info"  onclick="Cu7();">Calcular</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+      
+       
+
+
+     
+
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+         
+        
+        
+</body>
+</html>

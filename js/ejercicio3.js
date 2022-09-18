@@ -1,5 +1,3 @@
-
-
 function tipo(){
 
 var valor1 =parseInt (document.getElementById('valor1').value);
