@@ -32,10 +32,12 @@ flex-wrap: wrap;
     border-radius: 1em;
     font-size: 200%;
     margin: 1em;
+    cursor: pointer; 
    
 }
 .m:hover{
    background-color: #66ccff;
+   cursor: pointer;
 }
 
 .dos{
